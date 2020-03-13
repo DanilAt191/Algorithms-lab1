@@ -73,8 +73,11 @@ int main()
 Intermediate level:
 
   #include <iostream>
+	
 using namespace std;
+
 struct Date {
+
 	short day;
 	short month;
 	short year;
@@ -84,8 +87,10 @@ struct Date {
 bool Date::isCorrect()
 {
 	bool result = false;
+	
 	switch (month)
 	{
+	
 		case 1:
 		case 3:
 		case 5:
@@ -144,6 +149,7 @@ bool Date::isCorrect()
 
 struct Workers
 {
+
 	char F[56];
 	char I[32];
 	char O[32];
@@ -154,6 +160,7 @@ struct Workers
 
 int main()
 {
+
 	setlocale(LC_ALL, "");
 	const int N = 3;
 	Workers group[N];
