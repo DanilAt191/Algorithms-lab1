@@ -8,21 +8,28 @@
 
 struct Tovar
 {
+
 	char T[52];
 	char F[20];
 	int year;
 	int kol;
 	int price;
 };
+
 using namespace std;
+
 int main()
+
 {
+
 	const int N = 3;
 	double sumprice = 0;
 	setlocale(LC_ALL, "");
 	Tovar group[N];
 	for (int i = 0; i < N; i++)
-	{cout << "Введите товар: ";
+	
+	{
+		cout << "Введите товар: ";
 		cin.ignore(std::cin.rdbuf()->in_avail());
 		cin.getline(group[i].T, 52);
 
