@@ -13,7 +13,6 @@ struct Tovar
 	int kol;
 	int price;
 };
-
 using namespace std;
 int main()
 {
@@ -22,8 +21,7 @@ int main()
 	setlocale(LC_ALL, "");
 	Tovar group[N];
 	for (int i = 0; i < N; i++)
-	{
-		cout << "Введите товар: ";
+	{cout << "Введите товар: ";
 		cin.ignore(std::cin.rdbuf()->in_avail());
 		cin.getline(group[i].T, 52);
 
